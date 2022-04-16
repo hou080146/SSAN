@@ -20,17 +20,17 @@ logger.setLevel(logging.INFO)  # 设置log等级
 
 
 def save_checkpoint(state, opt):
-    filename = os.path.join(opt.save_path, 'model/best.pth.tar') # os.path.join（）会自动拼接后面的路径，并且自动加‘/’
+    filename = os.path.join(opt.save_path, 'model/best.pth.tar')  # os.path.join（）会自动拼接后面的路径，并且自动加‘/’
     torch.save(state, filename)  # 保存一对象到一个硬盘文件上
 
 
 def train(opt):
-    opt.device = torch.device('cuda:{}'.format(opt.GPU_id)) #sb又写了一遍
+    opt.device = torch.device('cuda:{}'.format(opt.GPU_id))  # sb又写了一遍
 
-    opt.save_path = './checkpoints/{}/'.format(opt.dataset) + opt.model_name #保存路径
+    opt.save_path = './checkpoints/{}/'.format(opt.dataset) + opt.model_name  # 保存路径
 
-    config(opt) #设置log保存路径等参数
-    train_dataloader = get_dataloader(opt)
+    config(opt)  # 设置log保存路径等参数
+    train_dataloader = get_dataloader(opt)  #
     opt.mode = 'test'
     test_img_dataloader, test_txt_dataloader = get_dataloader(opt)
     opt.mode = 'train'

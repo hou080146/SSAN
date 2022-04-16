@@ -34,7 +34,7 @@ def read_json(root):
 def read_dict(root):
     with open(root, 'rb') as f:
         # 反序列化root路径下的序列化文件
-        data = pickle.load(f) # 返回值为字典
+        data = pickle.load(f)  # 返回值为字典
 
     return data
 
@@ -48,7 +48,3 @@ def write_txt(data, name):
     with open(name, 'a') as f:
         f.write(data)
         f.write('\n')
-
-
-
-

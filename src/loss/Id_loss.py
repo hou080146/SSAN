@@ -16,7 +16,7 @@ def weights_init_classifier(m):
         init.constant_(m.bias.data, 0.0)
 
 
-class classifier(nn.Module):
+class classifier(nn.Module):    # 分类器
 
     def __init__(self, input_dim, output_dim):
         super(classifier, self).__init__()
@@ -40,7 +40,7 @@ class Id_Loss(nn.Module):
         W = []
         for i in range(part):
             W.append(classifier(feature_length, opt.class_num))
-        self.W = nn.Sequential(*W)
+        self.W = nn.Sequential(*W)  # 将网络模块封装在一个容器中，可以方面网络搭建
 
     def calculate_IdLoss(self, image_embedding_local, text_embedding_local, label):
 

@@ -138,11 +138,11 @@ class TextImgPersonReidNet(nn.Module):
         super(TextImgPersonReidNet, self).__init__()
 
         self.opt = opt
-        resnet50 = models.resnet50(pretrained=FALSE)
+        resnet50 = models.resnet50(pretrained=FALSE)    # resent50模型
         self.ImageExtract = nn.Sequential(*(list(resnet50.children())[:-2]))
         self.TextExtract = TextExtract(opt)
 
-        self.global_avgpool = nn.AdaptiveMaxPool2d((1, 1))
+        self.global_avgpool = nn.AdaptiveMaxPool2d((1, 1))  # 自适最大应池化
         self.local_avgpool = nn.AdaptiveMaxPool2d((opt.part, 1))
 
         conv_local = []

@@ -11,12 +11,12 @@ import torch.nn.functional as F
 
 
 def calculate_similarity(image_embedding, text_embedding):
-    image_embedding = image_embedding.view(image_embedding.size(0), -1)   #-1代表自己计算
+    image_embedding = image_embedding.view(image_embedding.size(0), -1)  # -1代表自己计算
     text_embedding = text_embedding.view(text_embedding.size(0), -1)
-    image_embedding_norm = image_embedding / (image_embedding.norm(dim=1, keepdim=True) + 1e-8)  #norm()范数 true代表保持维度
+    image_embedding_norm = image_embedding / (image_embedding.norm(dim=1, keepdim=True) + 1e-8)  # norm()范数 true代表保持维度
     text_embedding_norm = text_embedding / (text_embedding.norm(dim=1, keepdim=True) + 1e-8)
 
-    similarity = torch.mm(image_embedding_norm, text_embedding_norm.t())    #torch.mm()矩阵相乘
+    similarity = torch.mm(image_embedding_norm, text_embedding_norm.t())  # torch.mm()矩阵相乘
 
     similarity_match = torch.sum(image_embedding_norm * text_embedding_norm, dim=1)
 
@@ -110,4 +110,3 @@ class CRLoss(nn.Module):
                   + self.beta * self.calculate_loss(similarity_cr, labels, auto_margin_flag, margin_cr)
 
         return cr_loss
-

@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd4620f5-c6c8-449b-8136-459bc746bd94" name="Changes" comment="Changes" />
+    <list default="true" id="dd4620f5-c6c8-449b-8136-459bc746bd94" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/.idea/SSAN.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/nn.Linear().pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/nn.Module讲解.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/torch.utils.data.DataLoader详解.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/utils/read_write_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/utils/read_write_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dataloader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loss/Id_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/loss/Id_loss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/loss/RankingLoss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/loss/RankingLoss.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,16 +39,19 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27KxDojIWDwnaZijL3pxrkxNi4s" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -73,6 +91,21 @@
       <updated>1649082462870</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
