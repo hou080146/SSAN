@@ -25,9 +25,9 @@ class options():
         self._par.add_argument('--epoch_begin', type=int, default=5, help='when calculate the auto margin')
 
         self._par.add_argument('--batch_size', type=int, default=64, help='batch size')
-        self._par.add_argument('--adam_alpha', type=float, default=0.9, help='momentum term of adam') # Adam的动量
+        self._par.add_argument('--adam_alpha', type=float, default=0.9, help='momentum term of adam')  # Adam的动量
         self._par.add_argument('--adam_beta', type=float, default=0.999, help='momentum term of adam')
-        self._par.add_argument('--lr', type=float, default=0.001, help='initial learning rate for adam') #学习率
+        self._par.add_argument('--lr', type=float, default=0.001, help='initial learning rate for adam')  # 学习率
         self._par.add_argument('--margin', type=float, default=0.2, help='ranking loss margin')
         self._par.add_argument('--cr_beta', type=float, default=0.1, help12='ranking loss margin')
 
@@ -45,17 +45,16 @@ class options():
         self._par.add_argument('--GPU_id', type=str, default='2', help='choose GPU ID [0 1]')
         self._par.add_argument('--device', type=str, default='', help='cuda devie')
         self._par.add_argument('--dataset', type=str, help='choose the dataset ')
-        self._par.add_argument('--dataroot', type=str,  help='data root of the Data')
+        self._par.add_argument('--dataroot', type=str, help='data root of the Data')
 
         self.opt = self._par.parse_args()
 
-        self.opt.device = torch.device('cuda:{}'.format(self.opt.GPU_id[0])) #用opt里GPU_id[0]替换{}
+        self.opt.device = torch.device('cuda:{}'.format(self.opt.GPU_id[0]))  # 用opt里GPU_id[0]替换{}
         # 上一句字符串组合后为 self.opt.device = torch.device('cuda:GPU_id[0]')
         # torch.device代表将torch.tensor分配到的设备的对象(简单点说，就是分配到你的CPU还是GPU上,以及哪块GPU上)。
 
 
 def config(opt):
-
     log_config(opt)
     model_root = os.path.join(opt.save_path, 'model')
     # 路径不存在则生成路径
@@ -77,6 +76,3 @@ def log_config(opt):
     logger.addHandler(handler)
     if opt.mode != 'test':
         logger.info(opt)
-
-
-

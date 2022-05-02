@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd4620f5-c6c8-449b-8136-459bc746bd94" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/SSAN.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/资料/nn.Linear().pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/资料/nn.Module讲解.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/资料/torch.utils.data.DataLoader详解.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/资料/Vim 命令、操作、快捷键.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/utils/read_write_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/utils/read_write_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dataloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loss/Id_loss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/loss/Id_loss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/loss/RankingLoss.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/loss/RankingLoss.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/option/options.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/option/options.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +81,17 @@
       <updated>1649082462870</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

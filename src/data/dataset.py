@@ -48,7 +48,7 @@ class CUHKPEDEDataset(data.Dataset):  # 继承data.Dataset，所有数据集都�
 
         self.num_data = len(self.img_path)  # 数据个数为img_path里所有图片路径个数
 
-    def __getitem__(self, index):   # 迭代器，获取单个数据
+    def __getitem__(self, index):  # 迭代器，获取单个数据
         """
         :param index:单个下标
         :return: image and its label
@@ -81,16 +81,17 @@ class CUHKPEDEDataset(data.Dataset):  # 继承data.Dataset，所有数据集都�
         return image, label, caption_code, caption_length
 
     def caption_mask(self, caption):
+        # 对caption格式化
         caption_length = len(caption)
 
-        # 转换成np数组，再转换成张量tensor   view()函数修改数组形状，这里改成一维
+        # 转换成np数组，再转换成张量tensor   view()函数修改数组形状，这里改成一维,caption转换成一维张量
         caption = torch.from_numpy(np.array(caption)).view(-1).long()
 
         if caption_length < self.opt.caption_length_max:
             zero_padding = torch.zeros(self.opt.caption_length_max - caption_length).long()
-            caption = torch.cat([caption, zero_padding], 0)  # 按维数0拼接
+            caption = torch.cat([caption, zero_padding], 0)  # 按维数0拼接,caption不满足最大长度，其余补零
         else:
-            caption = caption[:self.opt.caption_length_max]
+            caption = caption[:self.opt.caption_length_max]  # 太长的截取最大长度
             caption_length = self.opt.caption_length_max
 
         return caption, caption_length
