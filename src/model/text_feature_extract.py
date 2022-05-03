@@ -32,14 +32,14 @@ class TextExtract(nn.Module):
     def calculate_different_length_lstm(self, text_embedding, text_length, lstm):
         text_length = text_length.view(-1)  # 改变维度
         _, sort_index = torch.sort(text_length, dim=0, descending=True)  # dim=0按列排序，降序，返回两个值分别为排序后的数据和其在原矩阵中的下标
-        _, unsort_index = sort_index.sort()
+        _, unsort_index = sort_index.sort()#这个sort不懂
 
-        sortlength_text_embedding = text_embedding[sort_index, :]
+        sortlength_text_embedding = text_embedding[sort_index, :]#不懂
         sort_text_length = text_length[sort_index]
         # print(sort_text_length)
         packed_text_embedding = nn.utils.rnn.pack_padded_sequence(sortlength_text_embedding,
                                                                   sort_text_length,
-                                                                  batch_first=True)
+                                                                  batch_first=True)#
 
         # self.lstm.flatten_parameters()
         packed_feature, _ = lstm(packed_text_embedding)  # [hn, cn]

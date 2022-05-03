@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd4620f5-c6c8-449b-8136-459bc746bd94" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/资料/nn.Embedding原理及使用.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/资料/nn.dropout().PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/text_feature_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/text_feature_extract.py" afterDir="false" />
     </list>
@@ -95,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651502965001</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes">
+      <created>1651592033430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651592033430</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
